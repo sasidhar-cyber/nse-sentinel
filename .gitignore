@@ -1,0 +1,4 @@
+# Keep local scan evidence private
+evidence/*
+!evidence/.gitkeep
+.DS_Store
