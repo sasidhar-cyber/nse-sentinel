@@ -2,20 +2,22 @@
 
 A student project to develop documented Nmap Scripting Engine (NSE/Lua) checks, demonstrate them in authorized lab environments, and prepare structured security assessment reports.
 
+## Live Website
+
+**Open the deployed website:** https://animated-sopapillas-aa858e.netlify.app
+
 ## Features
 - Interactive dashboard with script library, findings, methodology, and report builder.
 - Lab scan planner generates commands for manual execution; the website does not run Nmap.
 - Three low-impact NSE starter examples for HTTP headers, HTTP Server header, and SSH service metadata.
 - CSV export for illustrative findings and standalone HTML report template export.
 - Lab workflow and report template documentation.
-- GitHub Pages deployment workflow.
 
 ## Layout
 - index.html — interactive website.
 - scripts/ — NSE/Lua starter scripts and usage notes.
 - docs/lab-workflow.md — authorized lab workflow.
 - docs/report-template.md — structured report template.
-- .github/workflows/pages.yml — Pages deployment workflow.
 
 ## Example command
 Only run against a system you own or have explicit permission to test. 192.0.2.10 is reserved for documentation examples.
@@ -25,7 +27,9 @@ Only run against a system you own or have explicit permission to test. 192.0.2.1
 Review scripts in an isolated lab first. Nmap must be run locally. Missing headers or service banners alone do not prove exploitability.
 
 ## Deployment
-GitHub Pages is configured to deploy the root directory on pushes to main. After the workflow succeeds, the site URL is https://sasidhar-cyber.github.io/nse-sentinel/
+The website is hosted on Netlify: https://animated-sopapillas-aa858e.netlify.app
+
+The source code is maintained in this GitHub repository. Netlify hosting is separate from GitHub Pages.
 
 ## Safety
 Authorized lab use only. No exploitation, credential guessing, stealth, persistence, or public-target scanning.
